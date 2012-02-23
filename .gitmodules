@@ -1,0 +1,6 @@
+[submodule "ack.vim"]
+	path = ack.vim
+	url = ./bundle/ack.vim/
+[submodule "bundle/ack.vim"]
+	path = bundle/ack.vim
+	url = git://github.com/vim-scripts/ack.vim.git
