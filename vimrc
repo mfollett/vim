@@ -344,13 +344,6 @@ cmap <C-G>  <C-R><C-R>=GetLiteralPattern()<CR>
 xnoremap /  "vy/<C-R><C-R>=StringToPattern(@v)<CR>
 xnoremap ?  "vy?<C-R><C-R>=StringToPattern(@v)<CR>
 
-" Make * and # act similar to their normal-mode versions, but for the
-" visually-highlighted text. Note that these two mappings build on the / and ?
-" mappings above.
-"
-xmap *  /<CR>
-xmap #  ?<CR>
-
 " Tabularize on <Leader><Tab>, over highlighted text when as shch
 xmap <Leader><Tab> <Esc>:'<,'>Tabularize /
 noremap <Leader><Tab> <Esc>:Tabularize /
