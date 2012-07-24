@@ -154,6 +154,8 @@ if has("autocmd") && !exists("autocommands_loaded")
         \       exe "normal g`\"" |
         \   endif
 
+    autocmd BufRead *Spec.groovy set cinkeys-=:
+
 endif " has("autocmd")
 
 
@@ -352,7 +354,7 @@ xmap *  /<CR>
 xmap #  ?<CR>
 
 " Tabularize on <Leader><Tab>, over highlighted text when as shch
-xmap <Leader><Tab> <Esc>:'<,'>Tabularize /
+vmap <Leader><Tab> <Esc>:'<,'>Tabularize /
 noremap <Leader><Tab> <Esc>:Tabularize /
 
 " Abbreviations
@@ -369,4 +371,12 @@ let groovy_highlight_all=1
 let groovy_space_errors=1
 let groovy_highlight_debug=1
 let groovy_mark_braces_in_parens_as_errors=1
+
+
+"
+" Syntastic stuff
+"
+noremap <Leader>s :SyntasticCheck<CR>
+let g:syntastic_mode_map = { 'mode': 'active',
+                           \ 'passive_filetypes': ['javascript'] }
 " end _vimrc
