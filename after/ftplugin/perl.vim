@@ -10,6 +10,6 @@ setlocal iskeyword+=:
 " 
 " XXX: This can be improved, but it's beter than the default.
 "
-setlocal keywordprg=perldoc\ -f
+" setlocal keywordprg=perldoc\ -f
 
 " end .vim/after/ftplugin/perl.vim.
