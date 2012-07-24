@@ -3,7 +3,7 @@
 	url = git://github.com/vim-scripts/ack.vim.git
 [submodule "bundle/grails.vim"]
 	path = bundle/grails.vim
-	url = git://github.com/NathanNeff/grails-vim.git
+	url = git://github.com/mfollett/grails-vim.git
 [submodule "bundle/lusty"]
 	path = bundle/lusty
 	url = git://github.com/sjbach/lusty.git
@@ -19,3 +19,6 @@
 [submodule "bundle/vim-rails"]
 	path = bundle/vim-rails
 	url = git://github.com/tpope/vim-rails.git
+[submodule "bundle/conque"]
+	path = bundle/conque
+	url = git://github.com/vim-scripts/Conque-Shell.git
