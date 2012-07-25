@@ -372,4 +372,11 @@ let groovy_mark_braces_in_parens_as_errors=1
 noremap <Leader>s :SyntasticCheck<CR>
 let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'passive_filetypes': ['javascript'] }
+
+"
+" fugitive stuff
+"
+autocmd BufReadPost fugitive://* set bufhidden=delete
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+
 " end _vimrc
