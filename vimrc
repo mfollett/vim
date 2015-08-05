@@ -373,6 +373,16 @@ noremap <Leader>s :SyntasticCheck<CR>
 let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'passive_filetypes': ['javascript'] }
 
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_conf = '.eslintrc'
+
+let g:syntastic_html_checkers = ['tidy']
+" Use the HTML5-aware tidy available in brew.
+let g:syntastic_html_tidy_exec = 'tidy5'
+" Ignore custom attributes since they'll likely be Angular attribute
+" directives.
+let g:syntastic_html_tidy_ignore_errors = [ 'proprietary attribute' ]
+
 "
 " fugitive stuff
 "
