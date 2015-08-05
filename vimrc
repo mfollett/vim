@@ -389,4 +389,9 @@ let g:syntastic_html_tidy_ignore_errors = [ 'proprietary attribute' ]
 autocmd BufReadPost fugitive://* set bufhidden=delete
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
+"
+" End of the Microsoft sticky escape key tyranny
+"
+:inoremap jj <Esc>
+
 " end _vimrc
